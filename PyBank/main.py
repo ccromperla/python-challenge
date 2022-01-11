@@ -70,7 +70,7 @@ with open(py_bank, "w") as datafile:
         writer.writerow([("Financial Analysis")])
         writer.writerow(["----------------------------"])
         writer.writerow(["Total Months: " + str(total_months)])
-        #writer.writerow([("Total: $" + str(total))]
+        writer.writerow(["Total: $" + str(total)])
         writer.writerow([("Average Change: $" + str((round(average(profloss_diff),2))))])
-        #writer.writerow([(f"Greatest Increase In Profits: {months[x+1]} (${greatest_increase})")])
-        #writer.writerow([(f"Greatest Decrease In Profits: {months[y+1]} (${greatest_decrease})")])
+        writer.writerow([(f"Greatest Increase In Profits: {months[x+1]} (${greatest_increase})")])
+        writer.writerow([(f"Greatest Decrease In Profits: {months[y+1]} (${greatest_decrease})")])
